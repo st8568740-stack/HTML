@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+header {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.back-link {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.schedule-table th {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #334155;
+}
+
+.schedule-table td {
+    padding: 12px;
+    vertical-align: top;
+    width: 20%;
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+}
+
+.schedule-table td.empty-day {
+    background-color: #f8fafc;
+}
+
+/* Картки предметів */
+.event {
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+.event:last-child {
+    margin-bottom: 0;
+}
+
+.event strong {
+    display: inline-block;
+    color: #0f172a;
+    margin-right: 4px;
+}
+
+/* Колірна диференціація типів занять */
+.event.lecture {
+    background-color: #e0f2fe;
+    border-left: 4px solid #0284c7;
+}
+
+.event.prac {
+    background-color: #f0fdf4;
+    border-left: 4px solid #16a34a;
+}
+
+.event.lab {
+    background-color: #fef3c7;
+    border-left: 4px solid #d97706;
+}
