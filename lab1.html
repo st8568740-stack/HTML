@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 — Основи HTML</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html#labs" class="back-link">&larr; Повернутися до списку лабораторних</a>
+            <h1>Лабораторна робота №1: Основи HTML</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Форма реєстрації користувача</h2>
+            <p>Будь ласка, заповніть форму нижче для створення акаунту.</p>
+
+            
+            <form action="https://webhook.site/acb87778-98e2-4ec9-b4a5-782f567e9a0f" method="POST" class="registration-form">
+                
+                <div class="form-group">
+                    <label for="first-name">Ім'я <span class="required">*</span></label>
+                    <input type="text" id="first-name" name="first_name" placeholder="Введіть ім'я" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Прізвище <span class="required">*</span></label>
+                    <input type="text" id="last-name" name="last_name" placeholder="Введіть прізвище" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електронна пошта <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Введіть пароль" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="confirm-password">Підтвердження паролю <span class="required">*</span></label>
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Повторіть пароль" required>
+                </div>
+
+ 
+                <div class="form-group">
+                    <label for="birth-date">Дата народження</label>
+                    <input type="date" id="birth-date" name="birth_date">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Стать</label>
+                    <select id="gender" name="gender">
+                        <option value="">-- Оберіть стать --</option>
+                        <option value="male">Чоловіча</option>
+                        <option value="female">Жіноча</option>
+                        <option value="other">Інша</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Зареєструватися" class="submit-btn">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
